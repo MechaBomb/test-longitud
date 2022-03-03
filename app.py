@@ -49,7 +49,7 @@ def get_datosMPu(dato1):
 def get_datosMMm(dato1):
 	dato1 = float(dato1)
 	dato2 = dato1*1000
-	return jsonify({ "milimentro" : dato2})
+	return jsonify({ "milimetro" : dato2})
 
 @app.route("/metrolegua/<string:dato1>")
 def get_datosML(dato1):
@@ -60,7 +60,7 @@ def get_datosML(dato1):
 @app.route("/metromillan/<string:dato1>")
 def get_datosMMn(dato1):
 	dato1 = float(dato1)
-	dato2 = dato1*0.0002071
+	dato2 = dato1*0.0005399
 	return jsonify({ "milla nautica" : dato2})
 
 #Conversiones a kilómetro
@@ -537,7 +537,7 @@ def get_datosLP(dato1):
 def get_datosLPu(dato1):
 	dato1 = float(dato1)
 	dato2 = dato1*190080
-	return jsonify({ "milimetro" : dato2})
+	return jsonify({ "pulgada" : dato2})
 
 @app.route("/leguamili/<string:dato1>")
 def get_datosLMm(dato1):
@@ -598,7 +598,7 @@ def get_datosMnP(dato1):
 def get_datosMnPu(dato1):
 	dato1 = float(dato1)
 	dato2 = dato1*72913.385827
-	return jsonify({ "milimetro" : dato2})
+	return jsonify({ "pulgada" : dato2})
 
 @app.route("/millanmili/<string:dato1>")
 def get_datosMnMm(dato1):
