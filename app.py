@@ -409,7 +409,7 @@ def get_datosPuP(dato1):
 def get_datosPuM(dato1):
 	dato1 = float(dato1)
 	dato2 = dato1*0.0254
-	return jsonify({ "pulgada" : dato2})
+	return jsonify({ "metro" : dato2})
 
 @app.route("/pulgadamili/<string:dato1>")
 def get_datosPuMm(dato1):
