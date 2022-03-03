@@ -476,7 +476,7 @@ def get_datosMmP(dato1):
 def get_datosMmPu(dato1):
 	dato1 = float(dato1)
 	dato2 = dato1*0.03937008
-	return jsonify({ "milimetro" : dato2})
+	return jsonify({ "pulgada" : dato2})
 
 @app.route("/mililegua/<string:dato1>")
 def get_datosMmL(dato1):
